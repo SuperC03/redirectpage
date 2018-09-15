@@ -1,0 +1,12 @@
+<h1>Welcome to Colin's Link Shortener Site of Awsomeness</h1>
+
+<h2>Here are your Current Links</h2>
+<a href="/addlink"><h2>Click Here to Add Another One</h2></a>
+
+<% for(var i in links){ %>
+<div style="display: inline-block">
+    <a href="<%= i %>">
+    <img src=<%= links[i]["image"] %> width="320" height="180"/>
+    <h3><%= links[i]["name"] %></h3>
+</div>
+<% } %>
