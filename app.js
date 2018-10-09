@@ -43,7 +43,7 @@ app.get("/:linkSend", function(req, res){
     res.redirect(links[req.params.linkSend]["link"]);
 });
 
-app.listen(8080, function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log("Server is active");
 })
 
